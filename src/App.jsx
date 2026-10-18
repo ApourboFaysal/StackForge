@@ -12,7 +12,7 @@ const dataPromise = fetch("/data.json").then((res) => res.json());
 function App() {
   return (
     <>
-      <Toaster position="top-right" />
+      <Toaster position="top-center" />
 
       <Suspense fallback={<Loading />}>
         <Navber />
