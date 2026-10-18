@@ -4,21 +4,22 @@ import "./App.css";
 import Navber from "./components/Navber";
 import HeroSection from "./components/HeroSection";
 import TechCatalog from "./components/TechCatalog";
-import Loading from "./components/Loading";
 import Footer from "./components/Footer";
+import Loading from "./components/Loading";
 
 const dataPromise = fetch("/data.json").then((res) => res.json());
 
 function App() {
   return (
     <>
-      <Toaster position="top-center" />
-      <Navber />
-      <HeroSection />
+      <Toaster position="top-right" />
+
       <Suspense fallback={<Loading />}>
+        <Navber />
+        <HeroSection />
         <TechCatalog dataPromise={dataPromise} />
+        <Footer />
       </Suspense>
-      <Footer />
     </>
   );
 }
