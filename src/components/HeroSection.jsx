@@ -13,6 +13,7 @@ const Hero = () => {
         <p className="mt-6 text-gray-600 md:text-lg">
           Explore frontend, backend, database, and tooling options, compare them
           side by side, and put together the stack that fits your next project.
+          Best of Luck
         </p>
         <div className="mt-8 flex justify-center md:justify-start gap-3">
           <button
