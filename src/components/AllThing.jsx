@@ -15,7 +15,6 @@ const AllThing = ({ dataPromise }) => {
     setStack([...stack, tech]);
     toast.success(`${tech.name} added`);
   };
-
   const removeFromStack = (tech) => {
     setStack(stack.filter((item) => item.id !== tech.id));
     toast(`${tech.name} removed`);
