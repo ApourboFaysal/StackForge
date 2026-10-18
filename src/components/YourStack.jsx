@@ -40,7 +40,6 @@ const YourStack = ({ stack, onRemove, onRemoveAll }) => {
               </div>
             ))}
           </div>
-
           <button
             onClick={onRemoveAll}
             className="mt-12 w-full py-1.5 rounded-sm border border-red-300 bg-white text-red-600 text-sm font-medium hover:bg-red-50"

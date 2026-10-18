@@ -3,7 +3,6 @@ const Technologies = ({ technologies, stack, onAdd }) => {
     <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 items-start">
       {technologies.map((tech) => {
         const isAdded = stack.some((item) => item.id === tech.id);
-
         return (
           <div
             key={tech.id}
