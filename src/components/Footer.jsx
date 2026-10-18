@@ -13,10 +13,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2">
-            <img src={logo} alt="logo" className="h-9 w-auto" />
+            <img src={logo} alt="logo" />
             <p className="mt-4 text-sm text-gray-500 max-w-xs">
-              Curated tools, technologies, and resources for developers building
-              modern software.
+              Curated tools, technologies, and resources for developers and
+              engineers building modern software.
             </p>
             <div className="mt-4 flex gap-4 text-sm text-gray-700">
               {socials.map((name) => (
@@ -26,8 +26,6 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
-
           {columns.map((col) => (
             <div key={col.title}>
               <h4 className="text-sm font-semibold text-gray-900 uppercase">
@@ -43,8 +41,6 @@ const Footer = () => {
             </div>
           ))}
         </div>
-
-        {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-400">
           <p>© 2026 Dev Stack. All rights reserved.</p>
           <div className="flex gap-6">
